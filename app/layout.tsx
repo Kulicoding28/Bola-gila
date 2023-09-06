@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Sofia_Sans } from "next/font/google";
-import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
 
@@ -19,8 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={sofia.className}>
         <main>
-          <Navbar />
-          <section>{children}</section>
+          <section className="flex padding-x mt-8">
+            <Sidebar />
+            {children}
+          </section>
         </main>
       </body>
     </html>
