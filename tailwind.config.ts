@@ -18,17 +18,6 @@ const config: Config = {
       "4xl": ["48px", "58px"],
       "8xl": ["96px", "106px"],
     },
-    extend: {
-      colors: {
-        primary: "#303030",
-        secondary: "#222222",
-        accent: "#C3CC5A",
-      },
-
-      screens: {
-        wide: "1440px",
-      },
-    },
   },
   plugins: [],
 };

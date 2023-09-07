@@ -60,14 +60,17 @@ const Sidebar: FC = async () => {
   ];
 
   return (
-    <section className=" padding-x rounded-xl p-8 bg-secondary">
+    <section className=" padding-x card">
       <div>
-        <h1 className=" tracking-widest text-2xl font-bold leading-3 text-white ">
-          GILA<span className="text-accent">BOLA</span>
+        <h1 className=" tracking-widest text-2xl font-bold leading-3 text-slate-800 ">
+          GILA<span className="text-violet-500">BOLA</span>
         </h1>
         <ul className="space-y-2 padding-y">
           {Leagues.map((league) => (
-            <div key={league?.id} className="flex text-white">
+            <div
+              key={league?.id}
+              className="flex  text-slate-800 hover:text-slate-600 active:text-violet-300 font-semibold"
+            >
               <LinkLeague
                 href={league.href}
                 name={league.name}

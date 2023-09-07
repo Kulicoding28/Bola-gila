@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #303030;
+  background-color: #edf1f7;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,9 +11,8 @@ body {
 }
 
 @layer components {
-  .max-container {
-    max-width: 1440px;
-    margin: 0 auto;
+  .card {
+    @apply rounded-xl p-8 shadow-xl ring-1 ring-slate-900/5;
   }
 }
 
